@@ -114,5 +114,6 @@ Et voila, we get nginx with rtmp
 ## Step 9: Startt Streaming
 This server can stream from a variety of sources including a static file, webcam, etc.
 We previously installed ffmpeg. We'll start streaming [4MP@15fpsAVC-10.mp4](https://drive.upm.es/index.php/s/6rTdZcfaeEvoQdt/download "link title") which simulates a 4MP IP camera stream to our http://localhost/show/stream  
-<pre>ffmpeg -re -i 4MP@15fpsAVC-10.mp4 -vcodec libx264 -vprofile baseline -g 30 -acodec aac -strict -2 -f flv rtmp://localhost/show/stream</pre>
-
+<pre>ffmpeg -re -i 4MP@15fpsAVC-10.mp4 -vcodec libx264 -vprofile high -g 30 -acodec aac -strict -2 -f flv rtmp://localhost/show/stream</pre>
+If we want to play looped we may modify ffmpeg command as this way
+<pre>... -re -stream_loop -1 -i ... <pre>
