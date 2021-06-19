@@ -113,6 +113,6 @@ Et voila, we get nginx with rtmp
 
 ## Step 9: Startt Streaming
 This server can stream from a variety of sources including a static file, webcam, etc.
-We previously installed ffmpeg. We'll start streaming example-vid.mp4 to our http://localhost/show/stream
+We previously installed ffmpeg. We'll start streaming [4MP@15fpsAVC-10.mp4](https://drive.upm.es/index.php/s/6rTdZcfaeEvoQdt "link title") which simulates a 4MP IP camera stream to our http://localhost/show/stream  
 
 
